@@ -45,6 +45,7 @@ h1{
 h2, h3, p, caption, th, td, tr {
     text-align: center;
     color: #251d25af;
+    font-size: 17px;
 }
 
 h2, caption, th {
