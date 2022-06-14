@@ -2,24 +2,35 @@ nav ul li {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    }
+}
 
+/* fix postion of nav*/
 nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
     position: relative;
 }
-    
+
+/* makes dropdown list start right after header and not ontop */ 
+nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* makes dropdown list nice looking */  
 nav a   {
     display: block;
-    padding: 0 10px;
-    color: #fff;
+    padding: 0px 10px;
+    color: whitesmoke;
     line-height: 60px;
     font-size: 18px;
     text-decoration: none;
 }
-/* hide dropdown until hovering*/
+
+/* hide dropdown until hovering */
 nav ul ul {
     display: none;
     position: absolute;
@@ -30,12 +41,11 @@ nav ul ul {
 nav ul li:hover > ul {
     display: inherit;
 }
-
+/* allows for pages to go straight down */
 nav ul ul li{
     width: 220px;
     display: list-item;
     position: relative;
-
 }
 
 h1{
