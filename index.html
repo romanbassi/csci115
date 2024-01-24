@@ -14,28 +14,28 @@
 
     <style> 
         nav {
-            background-color: #e1ddd6ff;
-            word-spacing: 20px;
+            background-color: #ffdae5;
+            word-spacing: 12px;
             max-width: 100%; 
             max-height: 500px;
-
         }
 
         nav ul li {
-            background-color: #e1ddd6ff;
+            background-color: #ffdae5;
         }
 
-        nav a:hover {
-            background-color: rgb(219, 215, 206);
+        
+        nav a.fashion:hover, a.life:hover, a.pin:hover, a.beauty:hover {
+            background-color: #fad6e1;
         }
         
         nav a   {
-            color: white;
-            font-family: 'Playfair Display'; 
+            color: #251d2588;
+            font-family: 'Playfair Display';  
         }
 
         .button {
-            background-color: rgb(219, 215, 206);
+            background-color: rgb(24, 17, 2);
             font-family: 'Playfair Display';
             color: white;
         }
@@ -70,14 +70,6 @@
             font-variant: normal;
         }
 
-        .organize {
-            background-color: white;
-            text-align:center;
-            width: auto;
-            height: 650px;
-            padding: 10px;
-        }
-
         mark {
             background-color: rgba(255, 255, 255, 0.767);
             color: #251d2573;
@@ -85,7 +77,7 @@
 
         video, img{
             max-width: 100%;
-            max-height: 500px;
+            padding: 13px;
         }
 
         .section {
@@ -96,16 +88,52 @@
             padding: 10px;
         }
 
-        .logo:hover {
-            background-color: #e1ddd6ff;
-        }
 
         .link:hover {
             text-decoration: underline;
             color: #251d2573;  
         }
         
-        
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            justify-content: center;
+        }
+
+            /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+
+            width: 100%;
+        }
+
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 800px) {
+                .column {
+                    -ms-flex: 50%;
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
 
 
 </style>
@@ -116,62 +144,45 @@
     <center>
         <nav>
             <ul>
-                <li><a href="collector/collector.html">COLLECTOR<br><br></a></li>
-                <li><a href="traveller/traveller.html">TRAVELLER<br><br></a></li>
-                <li style="padding-top:19px" class="logo"> <a href="index.html"><img src= "logos/home_logo.png" alt="logo" style="max-width: 100%; max-height: 80px;"></a></li>
-                <li><a href="artist/artist.html">ARTIST<br><br></a></li>
-                <li><a href="../peculair/peculiar.html">PECULAIR<br><br></a></li>
+                <li><a class="fashion" href="collector/collector.html">FASHION<br><br></a></li>
+                <li><a class="life" href="traveller/traveller.html">LIFESTYLE<br><br></a></li>
+                <li style="padding-top:19px;" class="logo"> <a class="home" href="index.html" style="background-color: none;"><img src= "logos/logo.png" alt="logo" style="max-width: 100%; max-height: 110px;"></a></li>
+                <li><a class="beauty" href="artist/artist.html">BEAUTY<br><br></a></li>
+                <li><a class="pin" href="peculair/peculiar.html">PINTEREST<br><br></a></li>
             </ul>
         </nav>
     </center>
 
-    <div class="organize">
-        <br>
-        <br>
-        <img src= "home/home.png" alt="logo" style="max-width: 100%; max-height: 80px;">
-        <br>
-        <br>
-        <br>
-        <br>
 
-        <a href="collector/collector.html"><img src = "home/collect_head.jpeg" alt="header"></a>
-        <p class="postcat">COLLECTOR</p>
-        <a href="collector/collector.html" class="link"><p class="posthead">my collection of magazines</p></a>
         <br>
         <br>
         <br>
-        <br>
+        
+        <div class="row">
+            <div class="column">
+                <img src = "vsco/laduree/fix.jpeg" alt="header">
+                <img src = "vsco/laduree/front.jpeg" alt="header">
+                <img src = "vsco/laduree/bag.JPG" alt="header">
+            </div>
 
-        <a href="traveller/traveller.html"><img src = "home/travel_head.jpeg" alt="header"></a>
-        <p class="postcat">TRAVELLER</p>
-        <a href="traveller/traveller.html" class="link"><p class="posthead">the trips i have taken in 2022</p></a>
-        <br>
-        <br>
-        <br>
-        <br>
+            <div class="column">
+                <img src = "vsco/laduree/l.jpeg" alt="header">
+                <img src = "vsco/laduree/sit1.JPG" alt="header">
+                <img src = "vsco/laduree/sit2.JPG" alt="header">
+                <img src = "vsco/laduree/meal.JPG" alt="header">
 
-        <a href="artist/artist.html"><img src = "home/art_head.jpeg" alt="header"></a>
-        <p class="postcat">ARTIST</p>
-        <a href="artist/artist.html" class="link"><p class="posthead">inside my sketch book</p></a>
-        <br>
-        <br>
-        <br>
-        <br>
+            </div>
 
-        <a href="peculair/peculiar.html"><img src = "home/peculiar_head.png" alt="header"></a>
-        <p class="postcat">PECULAIR</p>
-        <a href="peculair/peculiar.html" class="link"><p class="posthead">my particular ways</p></a>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <div class="button_space">
-            <a href="sources/sources.html" class="button">SOURCES</a>
+            <div class="column">
+                <img src = "vsco/laduree/t.JPG" alt="header">
+                <img src = "vsco/laduree/display.JPG" alt="header">
+                <img src = "vsco/laduree/dis.jpeg" alt="header">
+            </div>
         </div>
-        <br>
 
-    </div>
+
+
+
 
 </body>
 </html>

@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../home.css">
-    <link rel="shortcut icon" href="../straw.png" type="image/png">
+    <link rel="shortcut icon" href="straw.png" type="image/png">
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
-    
     <title>roman bassi</title>
     
 
@@ -25,7 +24,8 @@
             background-color: #ffdae5;
         }
 
-        nav a:hover {
+        
+        nav a.fashion:hover, a.life:hover, a.pin:hover, a.beauty:hover {
             background-color: #fad6e1;
         }
         
@@ -34,63 +34,114 @@
             font-family: 'Playfair Display';  
         }
 
+        .button {
+            background-color: #ffdae5;
+            font-family: 'Playfair Display';
+            color: white;
+        }
+
         body {
             background-color: white;
         }
 
         p, li {
             font-family: 'Playfair Display';
-            color: #251d2588;
+            color: #e1ddd6ff;
             font-size: 2vmin;
         }
 
-
         h2 {
             font-family: 'Playfair Display';
-            color: #251d254f;
+            color: #251d2573;
             font-size: 3vmin;
         }
 
         
         .posthead {
             font-family: 'Playfair Display';
-            color: #251d254f;
+            color: #251d2573;
             font-size: 3vmin;
         }
 
         .postcat {
             font-family:Arial, Helvetica, sans-serif;
-            color: #251d254f;
+            color: #251d2573;
             font-size: 2vmin;
             font-variant: normal;
         }
 
-        .organize {
-            background-color: white;
-            width: auto;
-            padding: 10px;
-        }
-
         mark {
             background-color: rgba(255, 255, 255, 0.767);
-            color: #251d2588;
+            color: #251d2573;
         }
 
         video, img{
-            max-width: 100%; 
+            max-width: 100%;
+            max-height: 500px;
         }
 
-        p, h2 {
-            max-width: 900px; 
-            margin: 0px auto;
+        .section {
+            text-align:center;
+            width: auto;
+            height: 670px;
+            margin: 10px;
+            padding: 10px;
         }
 
-        .button {
-            background-color: #ffdae5;
-            font-family: 'Playfair Display';
-            color: #251d254f;
+
+        .link:hover {
+            text-decoration: underline;
+            color: #251d2573;  
         }
         
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 5 40px;
+            justify-content: center;
+        }
+
+            /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 10px;
+        }
+
+        .column img {
+            margin-top: 8px;
+
+            width: 100%;
+        }
+
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 800px) {
+                .column {
+                    -ms-flex: 50%;
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            .organize {
+            background-color: white;
+            text-align:center;
+            width: auto;
+            height: 650px;
+            padding: 10px;
+        }
 
 
 </style>
@@ -101,11 +152,11 @@
     <center>
         <nav>
             <ul>
-                <li><a href="../collector/collector.html">COLLECTOR<br><br></a></li>
-                <li><a href="../traveller/traveller.html">TRAVELLER<br><br></a></li>
-                <li style="padding-top:19px"> <a href="../index.html"><img src= "../logos/pink_logo.png" alt="logo" style="max-width: 100%; max-height: 80px;"></a></li>
-                <li><a href="../artist/artist.html">ARTIST<br><br></a></li>
-                <li><a href="peculiar.html">PECULAIR<br><br></a></li>
+                <li><a class="fashion" href="../collector/collector.html">FASHION<br><br></a></li>
+                <li><a class="life" href="../traveller/traveller.html">LIFESTYLE<br><br></a></li>
+                <li style="padding-top:19px;" class="logo"> <a class="home" href="../index.html" style="background-color: none;"><img src= "../logos/logo.png" alt="logo" style="max-width: 100%; max-height: 110px; padding: 13px;"></a></li>
+                <li><a class="beauty" href="../artist/artist.html">BEAUTY<br><br></a></li>
+                <li><a class="pin" href="../peculair/peculiar.html">PINTEREST<br><br></a></li>
             </ul>
         </nav>
     </center>
@@ -113,65 +164,50 @@
     <div class="organize">
         <br>
         <br>
-        <img src= "peculiar.png" alt="header" class="centering" style="max-width: 100%; max-height: 80px;">
-        <br>
-        <p class="posthead" style="color: #f8d1dc; font-size: 2vmin; text-align: center;">in many ways</p>
-        <br>
-        <br>
-        <img src= "photos/header.jpeg" alt="logo" class="centering" style="max-width: 100%; max-height: 650px;">
+        <img src= "../home/home.png" alt="logo" style="max-width: 100%; max-height: 80px;">
         <br>
         <br>
         <br>
         <br>
 
-            <h2>beauty</h2>
-            <br>
-            <p>Beauty and vanity are something that is very personal to an individual. Everyone has different needs and wants when, trying to present an image or enhance themselves. What factors in my <em>peculiarity</em> is my beauty routine. I only like to use eye products and blush. This is a strict regiment that I keep for events ranging from everyday to late nights. </p>
-            <br>
-            <p>When picking a <strong>blush</strong>, I like to go for more cool pink tones to complement my complexion. In a article written by <a href="https://janeiredale.com/blogs/makeup-blog/best-blush-for-your-skin-tone#:~:text=For%20a%20natural%20look%2C%20choose,for%20a%20pop%20of%20color." class="link">Chelsa Simmons</a>, she comments for " a natural look, choose a ... warm blush shade for a natural look and a cool blush shade for a pop of color." I chose the pop of color because it really highlights and pleases my face. The blush I religiously use is <a href="https://kyliecosmetics.com/en-ca/products/pressed-blush-powder?variant=43927624909042" class="link">Winter Kissed by Kylie Cosmetics</a>. The placement of blush is very <em>peculiar</em> of me as well. I like to place it as a dot, right on the concer of my eye socket. </p>
-            <br>
-            <p>My <em>peculiarity</em> also has advanced to always curling my <strong>lashes</strong> (not the weird part) and using clear mascara (the weird part). I was gifted long lashes by god. Instead of using a dark clumpy mascara, I enhance my lashes by coating them in <a href="https://shop.shoppersdrugmart.ca/Luxury/Categories/Beauty/Makeup/Eyes/Mascara/Great-Lash-Clear-Mascara%2C-Defines-Lashes-%26-Sets-Brows%2C-Natural-Finish/p/BB_041554519457?variantCode=041554519457&utm_source=google&utm_medium=search&utm_campaign=2022~12~22~ld~external~shoppersdrugmart~na~sdm~sdm-beauty~national~shopping~2023-sdm-ecomm-ao&utm_content=6014341~2023-sdm-ecomm-ao-pmax-tier1mass-en~na~en&utm_term=&gclid=CjwKCAiAxvGfBhB-EiwAMPakquf4nxCoi2pZY5FhgBm2KQ1YsenmEZhecCsrj1PHmrxRN-V-mxScnxoC8i0QAvD_BwE&gclsrc=aw.ds" class="link">Maybelline Great Lash Clear Mascara</a>.</p>
-            <br>
-            <video height="600" width="1000" autoplay loop muted class="centering">
-                <source src="beauty.mp4" type="video/mp4">
-            </video>
-            
-            
-            <br>  
-            <br>
-            <br>  
-            <br>
+        <a href="https://www.pinterest.ca/romankartar/barbie-dreams/"><img src = "barbie.jpeg" alt="header" style="max-width: 100%; max-height: 570px;"></a>
+        <p class="postcat">PINTEREST</p>
+        <a href="https://www.pinterest.ca/romankartar/barbie-dreams/" class="link"><p class="posthead">barbie dreams</p></a>
+        <br>
+        <br>
+        <br>
+        <br>
 
-            <h2>fragrance</h2>
-            <br>
-            <p>Scents can take you back to certain memories and even help you remember important information. When you are someone <em>peculiar</em> you need to be rememberable, so why not give society a scent to go with your important existence. The right strategy would be to try out a different scent in the realms of smells you like. Track how many compliments each scent gets and keep using the one with the most. The scents can be either lotions or perfumes. But the best way to make your scent unique is to use both. It's a good idea to use both mediums because if anyone asks or figures out what perfume or lotion you wear, they can never replicate as exactly as you have. You will forever become the standard idea to that person what the best smell is and will try hard to match it. </p>
-            <br>
-            <p><strong>TIP:</strong> First lather on your lotion and let it set for a minute. Then spray your perfume on top, using it as a setting but for your lotion. NEVER do perfume first, then lotion. You simply will not smell the perfume because of something called science. Lotion is used to lock in moisture and perfume smells when it hits the air. So if you spray on perfume then put on lotion, it will lock the perfume under the lotion not letting it release off your body.</p>
-            <br>
-            <p>A really good smell mixture to feel soft, sensual, and a touch of warmth is:</p>
-            <br>
-            <div class="row" style="max-width: 900px; margin: 0px auto;">
-                <div class="column">
-                  <img src="photos/palmers.jpeg" alt="palmers" style="width:100%">
-                  <p style="font-size: 12px; text-align:center;"><mark><a href="https://www.walmart.ca/en/ip/palmers-cocoa-butter-formula-daily-skin-therapy-body-lotion-24-hour-moisturization/6000194035864" class="link">Palmer’s Cocoa Butter</a></mark></p>
-                </div>
-                <div class="column">
-                  <img src="photos/sol.png" alt="crush cheirosa" style="width:100%">
-                  <p style="font-size: 12px; text-align:center;"><mark><a href="https://www.sephora.com/ca/en/product/sol-de-janeiro-cheirosa-71-body-mist-P463959?country_switch=ca&lang=en&skuId=2376044&om_mmc=ppc-GG_15996209908_133833715578_pla-1890510904935_2376044_576646932624_9001619_c&gclid=Cj0KCQiAtICdBhCLARIsALUBFcHhw0B3SVqpVJfPUS0aqO_LwM8qcqnwVR-r3Heh6kmke5I9zZ-VaeYaAl3KEALw_wcB&gclsrc=aw.ds" class="link">Sol de Janeiro Brazilian Crush Cheirosa ’71 Hair & Body Fragrance Mist</a></mark></p>
-                </div>
-                <div class="column">
-                  <img src="photos/super.jpeg" alt="soap&glory" style="width:100%">
-                  <p style="font-size: 12px; text-align:center;"><mark><a href="https://www.soapandglory.com/body-care/body-spray-mist/smoothie-star-body-spray-mist" class="link">Smoothie Star Body Spray Mist</a></mark></p>
-                </div>
-            </div>
+        <a href="https://www.pinterest.ca/romankartar/socialite/"><img src = "soc.jpeg" alt="header"></a>
+        <p class="postcat">PINTEREST</p>
+        <a href="https://www.pinterest.ca/romankartar/socialite/" class="link"><p class="posthead">socialite</p></a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a href="https://www.pinterest.ca/romankartar/on-vacation/"><img src = "on.jpeg" alt="header"></a>
+        <p class="postcat">PINTEREST</p>
+        <a href="https://www.pinterest.ca/romankartar/on-vacation/" class="link"><p class="posthead">on vacation</p></a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a href="https://www.pinterest.ca/romankartar/teenage-diaries/"><img src = "teen.jpeg" alt="header"></a>
+        <p class="postcat">PINTEREST</p>
+        <a href="https://www.pinterest.ca/romankartar/teenage-diaries/" class="link"><p class="posthead">teenage diaries</p></a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="button_space">
+            <a href="sources/sources.html" class="button">romankartar</a>
+        </div>
+        <br>
+
+
     </div>
-
-    <br>
-    <br>
-
-    <div class="button_space">
-        <a href="peculiar.html" class="button">RETURN TO THE TOP</a>
-    </div>
-
 </body>
 </html>
